@@ -53,3 +53,6 @@ Clean the data up to make it ready for modeling process. I made the following ch
 
 ## EDA
 I looked at the distributions of the data, checked for the presence of possible outliers for the various decimal variables and explored the value counts for the target variable (which is the only categorical variable in the dataset) to extract insights and patterns that could be useful in the rest of the project. Below are some of the visualizations I made:<br>
+<img src="dist_radius_mean.png"><br>
+<img src="box_radius_mean.png"><br>
+<img src="count_diagnosis.png">
