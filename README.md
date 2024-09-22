@@ -52,3 +52,4 @@ Clean the data up to make it ready for modeling process. I made the following ch
 * transformed diagnosis variable and made it numerical (B or Benign ---> 0 / M or Malignant ---> 1) so, our data will be ready to feed our model.
 
 ## EDA
+I looked at the distributions of the data, checked for the presence of possible outliers for the various decimal variables and explored the value counts for the target variable (which is the only categorical variable in the dataset) to extract insights and patterns that could be useful in the rest of the project. Below are some of the visualizations I made:<br>
