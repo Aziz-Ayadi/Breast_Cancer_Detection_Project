@@ -49,6 +49,6 @@ With each patient, we got the following :
 ## Data Cleaning
 Clean the data up to make it ready for modeling process. I made the following changes:
 * dropped useless columns (Patient ID & the last column which is unnamed).
-* transformed diagnosis variable and make it numerical (B or Benign ---> 0 / M or Malignant ---> 1).
+* transformed diagnosis variable and made it numerical (B or Benign ---> 0 / M or Malignant ---> 1) so, our data will be ready to feed our model.
 
 ## EDA
