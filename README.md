@@ -5,8 +5,8 @@
 * Built an Artificial Neural Network (ANN) from scratch to feed it with our data and try to get the best performance ever from our model.
 
 ## Code and Resources used
-<b>Python Version :</b> 3.9
-<b>Packages :</b> Numpy, Matplotlib, Seaborn, Pandas, TensorFlow, Scikit-learn
+<b>Python Version :</b> 3.9<br>
+<b>Packages :</b> Numpy, Matplotlib, Seaborn, Pandas, TensorFlow, Scikit-learn<br>
 <b>For Web Framework Requirements :</b> pip install -r requirements.txt
 
 ## Data Collection
