@@ -52,7 +52,20 @@ Clean the data up to make it ready for modeling process. I made the following ch
 * transformed diagnosis variable and made it numerical (B or Benign ---> 0 / M or Malignant ---> 1) so, our data will be ready to feed our model.
 
 ## EDA
-I looked at the distributions of the data, checked for the presence of possible outliers for the various decimal variables and explored the value counts for the target variable (which is the only categorical variable in the dataset) to extract insights and patterns that could be useful in the rest of the project. Below are some of the visualizations I made:<br>
+I looked at the distributions of the data, checked for the presence of possible outliers for the various decimal variables and explored the value counts for the target variable (which is the only categorical variable in the dataset) to extract insights and patterns that could be useful in the rest of the project. Below are some of the visualizations I made:<br><br><br>
 <img src="dist_radius_mean.png"><br>
 <img src="box_radius_mean.png"><br>
 <img src="count_diagnosis.png">
+
+## Model Building
+First, I splitted up data in training and test sets with test size of 20%. I also standardized decimal features using a standard scaler to avoid as much as possible any possibility of model bias.<br>
+I constructed a three-layer artificial neural network from scratch using keras from tensorflow, compiled it using `adam` optimizer, set loss to `sparse_categorical_crossentropy` and metric to `accuracy`. After that, I fed it up with training dataset by setting number of epochs to 10 and validation size as 10% of the data.
+* The first layer is a flat one with an input size that equals to the number of independent features.
+* The second layer is a normal one with 20 nodes and `relu` as an activation function.
+* The last layer is also a normal one with 2 nodes (equals to the number of target categories) and `sigmoid` as an activation function.
+
+## Model Performance
+Our deep learning model has performed very well on validation and test sets as we get the following as final results:
+* <b>Training accuracy :</b> 96 %
+* <b>Validation accuracy :</b> 98 %
+* <b>Testing accuracy :</b> 92 %
