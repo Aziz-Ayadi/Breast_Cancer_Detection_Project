@@ -51,10 +51,25 @@ Clean the data up to make it ready for modeling process. I made the following ch
 * dropped useless columns (Patient ID & the last column which is unnamed).
 * transformed diagnosis variable and made it numerical (B or Benign ---> 0 / M or Malignant ---> 1) so, our data will be ready to feed our model.
 
-## EDA
+## EDA with SQL (Microsoft SQL Server)
+I had to explore the data more and try to find relationships between features using SQL (Microsoft SQL Server) by exacuting some queries (12):
+* The number of samples according to the diagnosis category
+* The average of radius_mean according to the diagnosis category
+* The average of texture_mean according to the diagnosis category
+* The average of perimeter_mean according to the diagnosis category
+* The average of area_mean according to the diagnosis category
+* The average of smoothness_mean according to the diagnosis category
+* The average of compactness_mean according to the diagnosis category
+* The average of concave points_mean according to the diagnosis category
+* The average of symmetry_mean according to the diagnosis category
+* The average of fractal_dimension_mean according to the diagnosis category
+* The number of samples that have their radius_mean above or equal to the average groupped by diagnosis
+* Transform each category without an abbreviation using a CASE statement
+
+## EDA with Data Visualization (Matplotlib & Seaborn)
 I looked at the distributions of the data, checked for the presence of possible outliers for the various decimal variables and explored the value counts for the target variable (which is the only categorical variable in the dataset) to extract insights and patterns that could be useful in the rest of the project. Below are some of the visualizations I made:<br><br><br>
-<img src="dist_radius_mean.png"><br>
-<img src="box_radius_mean.png"><br>
+<img src="dist_radius_mean.png">
+<img src="box_radius_mean.png">
 <img src="count_diagnosis.png">
 
 ## Model Building
