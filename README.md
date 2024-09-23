@@ -7,7 +7,7 @@
 ## Code and Resources used
 <b>Python Version :</b> 3.9<br>
 <b>Packages :</b> Numpy, Matplotlib, Seaborn, Pandas, TensorFlow, Scikit-learn<br>
-<b>For Web Framework Requirements :</b> pip install -r requirements.txt
+<b>For Web Framework Requirements :</b> `pip install -r requirements.txt`
 
 ## Data Collection
 Collect data from kaggle website to get a dataset that has 569 patients.
