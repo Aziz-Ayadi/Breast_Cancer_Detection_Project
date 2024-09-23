@@ -71,6 +71,7 @@ I looked at the distributions of the data, checked for the presence of possible 
 <img src="dist_radius_mean.png">
 <img src="box_radius_mean.png">
 <img src="count_diagnosis.png">
+<img src="corr_se.png">
 
 ## Model Building
 First, I splitted up data in training and test sets with test size of 20%. I also standardized decimal features using a standard scaler to avoid as much as possible any possibility of model bias.<br>
